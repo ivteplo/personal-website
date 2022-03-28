@@ -1,0 +1,45 @@
+/* Copyright (c) 2022 Ivan Teplov */
+
+.overlay,
+.overlay::before {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.overlay {
+  opacity: 1;
+  visibility: visible;
+
+  z-index: 2;
+
+  transition: calc(var(--transition-duration) * 2);
+}
+
+.overlay::before {
+  content: '';
+
+  background-color: var(--gray);
+  opacity: 0.5;
+}
+
+.innerWrapper {
+  position: fixed;
+  z-index: 3;
+
+  background: var(--background);
+  transition: calc(var(--transition-duration) * 2);
+}
+
+.overlay[aria-hidden='true'] {
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.overlay[aria-hidden='true'] .innerWrapper {
+  transform: translate(100%);
+}

@@ -1,0 +1,48 @@
+// Copyright (c) 2022 Ivan Teplov
+
+import { useRef } from 'react'
+
+import classNames from 'classnames'
+import styles from '../styles/Overlay.module.css'
+
+export default function Overlay({
+  visible = true,
+  wrapperProps = {},
+  className,
+  children,
+  onHide,
+  ...props
+}) {
+  const wrapperClasses = classNames(wrapperProps?.className, styles.overlay)
+
+  const classes = classNames(className, styles.innerWrapper)
+
+  const contentsRef = useRef(undefined)
+
+  const onClick = (event) => {
+    if (contentsRef.current && onHide instanceof Function) {
+      const element = contentsRef.current
+
+      if (!element.contains(event.target)) {
+        onHide()
+      }
+    }
+
+    if (wrapperProps?.onClick instanceof Function) {
+      wrapperProps.onClick(event)
+    }
+  }
+
+  return (
+    <div
+      {...wrapperProps}
+      aria-hidden={String(!visible)}
+      className={wrapperClasses}
+      onClick={onClick}
+    >
+      <main ref={contentsRef} {...props} className={classes}>
+        {children}
+      </main>
+    </div>
+  )
+}
