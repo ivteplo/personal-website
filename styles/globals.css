@@ -4,11 +4,17 @@
   --foreground: #000;
   --background: #fff;
 
+  --vibrant-bg: #fff8;
+  --vibrancy: blur(2rem);
+
   --primary: #0b43de;
   --on-primary: #fff;
 
   --gray: #47464e;
   --on-gray: #fff;
+
+  --inverse: #000;
+  --on-inverse: #fff;
 
   --transition-duration: 0.3s;
 

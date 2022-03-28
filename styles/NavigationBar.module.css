@@ -3,6 +3,9 @@
 .navigationBar {
   padding: 1.75rem 2rem;
 
+  background-color: var(--vibrant-bg);
+  backdrop-filter: var(--vibrancy);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +40,7 @@
 .menu {
   right: 0;
   top: 0;
-  bottom: 0;
+  height: 100vh;
 
   background-color: var(--background);
 

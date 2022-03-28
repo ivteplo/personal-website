@@ -14,11 +14,9 @@ export default function Overlay({
   ...props
 }) {
   const wrapperClasses = classNames(wrapperProps?.className, styles.overlay)
-
   const classes = classNames(className, styles.innerWrapper)
 
   const contentsRef = useRef(undefined)
-
   const onClick = (event) => {
     if (contentsRef.current && onHide instanceof Function) {
       const element = contentsRef.current
