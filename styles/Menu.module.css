@@ -11,16 +11,27 @@
   flex-direction: column;
 
   padding: 1.75rem 2rem;
+  gap: 2rem;
+}
+
+@media (max-width: 26rem) {
+  .menu {
+    width: 100%;
+  }
 }
 
 .menuSection {
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: flex-start;
+  gap: 1rem;
 }
 
 .menuSectionTitle {
+  font-size: 1.5rem;
+  text-transform: lowercase;
+  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -29,4 +40,40 @@
   align-self: flex-end;
   line-height: 1;
   aspect-ratio: 1;
+}
+
+.menuLink {
+  font-size: 2rem;
+  position: relative;
+}
+
+.menuLink::after {
+  content: '';
+
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: calc(100% + 0.05em);
+  bottom: -0.1em;
+  background-color: currentColor;
+
+  transition: var(--transition-duration);
+}
+
+.menuLink:hover,
+.menuLink:focus,
+.menuLink:active {
+  color: var(--on-primary);
+}
+
+.menuLink:hover::after,
+.menuLink:focus::after,
+.menuLink:active::after {
+  left: -0.25em;
+  right: -0.25em;
+  top: 0;
+
+  border-radius: 0.25em;
+  color: var(--foreground);
 }

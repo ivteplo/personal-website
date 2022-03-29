@@ -17,4 +17,11 @@
 
 .centered {
   align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 22rem) {
+  .header {
+    font-size: 1.25rem;
+  }
 }

@@ -1,6 +1,7 @@
 // Copyright (c) 2022 Ivan Teplov
 
 import { useContext, createContext } from 'react'
+import classNames from 'classnames'
 import Link from 'next/link'
 
 import Overlay from './Overlay'
@@ -13,7 +14,7 @@ export const MenuContext = createContext({
   closeMenu: () => {},
 })
 
-export function MenuLink({ onClick, href, ...props }) {
+export function MenuLink({ onClick, href, className, ...props }) {
   const { closeMenu } = useContext(MenuContext)
 
   const handleClick = (event) => {
@@ -24,9 +25,11 @@ export function MenuLink({ onClick, href, ...props }) {
     }
   }
 
+  const classes = classNames(className, styles.menuLink)
+
   return (
     <Link href={href}>
-      <a onClick={handleClick} {...props}>
+      <a onClick={handleClick} className={classes} {...props}>
         {props.children}
       </a>
     </Link>
