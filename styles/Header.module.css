@@ -2,12 +2,19 @@
 
 .header {
   min-height: 100vh;
+  box-sizing: border-box;
+
+  padding: 2rem;
+
   display: flex;
   flex-direction: column;
+
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+
+  font-size: 1.5rem;
 }
 
-.headerSubtitle {
-  font-size: 1.5rem;
+.centered {
+  align-items: center;
 }

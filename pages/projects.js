@@ -1,14 +1,18 @@
 // Copyright (c) 2022 Ivan Teplov
 
-import Header from '../components/Header'
+import Head from 'next/head'
+
 import PageSection from '../components/PageSection'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
     <>
-      <Header centered>
-        <h1>Ivan Teplov</h1>
-        <p>Full-Stack Web Developer</p>
+      <Head>
+        <title>Projects | Ivan Teplov</title>
+      </Head>
+      <Header>
+        <h1>Projects</h1>
       </Header>
       <main>
         <PageSection title="Introduction">
