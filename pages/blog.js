@@ -3,14 +3,14 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 
-export default function Projects() {
+export default function Blog() {
   return (
     <>
       <Head>
-        <title>Projects | Ivan Teplov</title>
+        <title>Blog | Ivan Teplov</title>
       </Head>
       <Header centered mini>
-        <h1>Projects</h1>
+        <h1>Blog</h1>
       </Header>
     </>
   )

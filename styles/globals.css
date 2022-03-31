@@ -1,6 +1,8 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
 :root {
+  --container-padding: 2rem;
+
   --foreground: #000;
   --background: #fff;
 
@@ -17,6 +19,13 @@
   --on-inverse: #fff;
 
   --transition-duration: 0.3s;
+
+  --_header-font-size-step: 1rem;
+  --large-title-size: 4rem;
+  --title-size: calc(var(--large-title-size) - var(--_header-font-size-step));
+  --subtitle-size: calc(
+    var(--large-title-size) - var(--_header-font-size-step) * 2
+  );
 
   color: var(--foreground);
   background: var(--background);
@@ -62,38 +71,28 @@ a:active {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: var(--large-title-size);
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: var(--title-size);
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: var(--subtitle-size);
 }
 
 @media (max-width: 28rem) {
-  h1 {
-    font-size: 3rem;
-  }
-
-  h2 {
-    font-size: 2.5rem;
+  :root {
+    --large-title-size: 3rem;
+    --_header-font-size-step: 0.75rem;
   }
 }
 
 @media (max-width: 22rem) {
-  h1 {
-    font-size: 2.5rem;
-  }
-
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    font-size: 1.5rem;
+  :root {
+    --large-title-size: 2.5rem;
+    --_header-font-size-step: 0.5rem;
   }
 }
 

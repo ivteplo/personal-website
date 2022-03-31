@@ -13,8 +13,8 @@ export default function Overlay({
   onHide,
   ...props
 }) {
-  const wrapperClasses = classNames(wrapperProps?.className, styles.overlay)
-  const classes = classNames(className, styles.innerWrapper)
+  const wrapperClasses = classNames(styles.overlay, wrapperProps?.className)
+  const classes = classNames(styles.innerWrapper, className)
 
   const contentsRef = useRef(undefined)
   const onClick = (event) => {

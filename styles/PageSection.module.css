@@ -1,7 +1,7 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
 .pageSection {
-  padding: 2rem;
+  padding: var(--container-padding);
   display: flex;
   flex-direction: column;
   gap: 1rem;

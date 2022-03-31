@@ -1,12 +1,12 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
 .footer {
-  padding: 2rem;
+  padding: var(--container-padding);
 
   background-color: var(--inverse);
   color: var(--on-inverse);
 }
 
 .footer h2 {
-  font-size: 2rem;
+  font-size: var(--subtitle-size);
 }

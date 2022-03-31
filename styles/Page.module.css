@@ -3,8 +3,16 @@
 .page {
   display: flex;
   flex-direction: column;
+
+  /* Padding for the navigation bar */
+  padding-top: 6rem;
+  min-height: 100vh;
+}
+
+.spacer {
+  flex-grow: 1;
 }
 
 .page > footer {
-  margin-top: 2rem;
+  margin-top: var(--container-padding);
 }
