@@ -2,6 +2,9 @@
 
 import Header from '../components/Header'
 import PageSection from '../components/PageSection'
+import ProjectPreview from '../components/ProjectPreview'
+
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -22,6 +25,15 @@ export default function Home() {
             sollicitudin sem augue at lorem. Sed laoreet sem id justo ultrices,
             id auctor tellus cursus.
           </p>
+        </PageSection>
+        <PageSection title="Projects">
+          <div className={styles.projectPreviewsContainer}>
+            <ProjectPreview />
+            <ProjectPreview />
+            <ProjectPreview />
+            <ProjectPreview />
+            <ProjectPreview />
+          </div>
         </PageSection>
       </main>
     </>

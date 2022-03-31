@@ -1,0 +1,8 @@
+/* Copyright (c) 2022 Ivan Teplov */
+
+.projectPreviewsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: calc(var(--container-padding) * 2);
+  gap: calc(var(--container-padding) * 2) var(--container-padding);
+}

@@ -2,7 +2,12 @@
 
 .pageSection {
   padding: var(--container-padding);
+  gap: calc(var(--container-padding) / 2);
+
+  min-height: 40rem;
+
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+
+  justify-content: center;
 }

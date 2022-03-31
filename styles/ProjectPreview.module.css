@@ -1,0 +1,21 @@
+/* Copyright (c) 2022 Ivan Teplov */
+
+.projectPreview {
+  display: flex;
+  flex-direction: column-reverse;
+
+  gap: calc(var(--container-padding) / 2);
+
+  text-align: center;
+}
+
+.projectImageWrapper {
+  position: relative;
+  /* I don't know why the image overlaps the navigation bar
+     and menu, but this line of code helps to fix that */
+  z-index: -1;
+}
+
+.projectImage {
+  border-radius: 2rem;
+}
