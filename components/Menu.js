@@ -2,11 +2,13 @@
 
 import { useContext, createContext } from 'react'
 import classNames from 'classnames'
+import map from '../utilities/map'
 import Link from 'next/link'
 
 import Overlay from './Overlay'
 
 import styles from '../styles/Menu.module.css'
+import contactInfo from '../assets/contactInfo.json'
 
 export const MenuContext = createContext({
   isMenuOpen: false,
@@ -70,8 +72,11 @@ export function Menu(props) {
         <MenuLink href="/blog">Blog</MenuLink>
       </MenuSection>
       <MenuSection title="Contact">
-        <MenuLink href="https://github.com/ivteplo">GitHub</MenuLink>
-        <MenuLink href="https://instagram.com/iteplov7">Instagram</MenuLink>
+        {map(contactInfo, (link, website) => (
+          <MenuLink key={website} href={link}>
+            {website}
+          </MenuLink>
+        ))}
       </MenuSection>
     </Overlay>
   )
