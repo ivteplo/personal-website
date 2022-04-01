@@ -11,7 +11,9 @@ export default function Home() {
     <>
       <Header centered>
         <h1>Ivan Teplov</h1>
-        <p>Full-Stack Web Developer</p>
+        <p className={styles.headerSubtitle}>
+          Full-Stack Web Developer and Software Engineer
+        </p>
       </Header>
       <main>
         <PageSection title="Introduction">

@@ -1,5 +1,9 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
+.headerSubtitle {
+  text-transform: lowercase;
+}
+
 .projectPreviewsContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
