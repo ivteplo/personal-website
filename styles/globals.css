@@ -1,7 +1,7 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
 :root {
-  --container-padding: 2rem;
+  --container-padding: 1.5rem;
 
   --foreground: #000;
   --background: #fff;
@@ -16,13 +16,10 @@
 
   --transition-duration: 0.3s;
 
-  --_header-font-size-step: 2rem;
-  --large-title-size: 6rem;
-  --title-size: calc(var(--large-title-size) - var(--_header-font-size-step));
-  --subtitle-size: calc(
-    var(--large-title-size) - var(--_header-font-size-step) * 2
-  );
-  --bigger-text: 1.5rem;
+  --large-title-size: 3rem;
+  --title-size: 2.25rem;
+  --subtitle-size: 1.5rem;
+  --bigger-text: 1rem;
 
   --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -39,10 +36,35 @@
   -webkit-tap-highlight-color: transparent;
 }
 
+/* Phone but not the smallest */
+@media (min-width: 26rem) {
+  :root {
+    --container-padding: 2rem;
+  }
+}
+
+/* Laptop */
+@media (min-width: 64rem) {
+  :root {
+    --large-title-size: 6rem;
+    --title-size: 4rem;
+    --subtitle-size: 2rem;
+    --bigger-text: 1.5rem;
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #fff;
     --background: #000;
+
+    --vibrant-bg: #0008;
+    --vibrancy: blur(2rem);
+
+    --gray: #777;
+
+    --inverse: #333;
+    --on-inverse: #fff;
   }
 }
 
@@ -80,20 +102,6 @@ h2 {
 
 h3 {
   font-size: var(--subtitle-size);
-}
-
-@media (max-width: 28rem) {
-  :root {
-    --large-title-size: 3rem;
-    --_header-font-size-step: 0.75rem;
-  }
-}
-
-@media (max-width: 22rem) {
-  :root {
-    --large-title-size: 2.5rem;
-    --_header-font-size-step: 0.5rem;
-  }
 }
 
 button {

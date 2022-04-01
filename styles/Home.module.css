@@ -10,3 +10,9 @@
   margin-top: calc(var(--container-padding) * 2);
   gap: calc(var(--container-padding) * 2) var(--container-padding);
 }
+
+@media (min-width: 1024px) {
+  .projectPreviewsContainer {
+    grid-template-columns: 1fr;
+  }
+}
