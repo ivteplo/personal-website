@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: flex-start;
 
-  font-size: 1.5rem;
+  font-size: var(--bigger-text);
 }
 
 .centered {

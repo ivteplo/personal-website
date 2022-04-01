@@ -29,9 +29,11 @@
 }
 
 .menuSectionTitle {
-  font-size: 1.5rem;
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: var(--bigger-text);
+  color: var(--gray);
   text-transform: lowercase;
-  font-weight: 600;
   margin-bottom: 1rem;
 }
 
@@ -43,7 +45,7 @@
 }
 
 .menuLink {
-  font-size: 2rem;
+  font-size: var(--subtitle-size);
   position: relative;
 }
 
@@ -64,7 +66,7 @@
 .menuLink:hover,
 .menuLink:focus,
 .menuLink:active {
-  color: var(--on-primary);
+  color: var(--background);
 }
 
 .menuLink:hover::after,

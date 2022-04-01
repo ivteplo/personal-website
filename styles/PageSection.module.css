@@ -11,3 +11,7 @@
 
   justify-content: center;
 }
+
+.pageSection p {
+  font-size: var(--bigger-text);
+}

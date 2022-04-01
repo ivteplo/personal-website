@@ -9,32 +9,32 @@
   --vibrant-bg: #fff8;
   --vibrancy: blur(2rem);
 
-  --primary: #0b43de;
-  --on-primary: #fff;
-
-  --gray: #47464e;
-  --on-gray: #fff;
+  --gray: #777777;
 
   --inverse: #000;
   --on-inverse: #fff;
 
   --transition-duration: 0.3s;
 
-  --_header-font-size-step: 1rem;
-  --large-title-size: 4rem;
+  --_header-font-size-step: 2rem;
+  --large-title-size: 6rem;
   --title-size: calc(var(--large-title-size) - var(--_header-font-size-step));
   --subtitle-size: calc(
     var(--large-title-size) - var(--_header-font-size-step) * 2
   );
+  --bigger-text: 1.5rem;
+
+  --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
+  --primary-font: 'Poppins', var(--system-font);
 
   color: var(--foreground);
   background: var(--background);
 
   line-height: 1.5;
 
-  /* System font */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-family: var(--system-font);
 
   -webkit-tap-highlight-color: transparent;
 }
@@ -67,7 +67,7 @@ a {
 a:hover,
 a:focus,
 a:active {
-  color: var(--primary);
+  color: var(--gray);
 }
 
 h1 {
@@ -123,4 +123,17 @@ button,
 p,
 span {
   user-select: none;
+}
+
+button,
+h1,
+h2,
+h3,
+:not(p) > a {
+  font-family: var(--primary-font);
+}
+
+button,
+:not(p) > a {
+  font-weight: 500;
 }
