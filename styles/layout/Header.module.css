@@ -1,10 +1,8 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
 .header {
-  min-height: 70vh;
+  min-height: 70vh !important;
   box-sizing: border-box;
-
-  padding: var(--container-padding);
 
   display: flex;
   flex-direction: column;
@@ -12,7 +10,7 @@
   justify-content: center;
   align-items: flex-start;
 
-  font-size: var(--bigger-text);
+  font-size: var(--bigger-text-size);
 }
 
 .centered {
@@ -21,11 +19,5 @@
 }
 
 .mini {
-  min-height: auto;
-}
-
-@media (max-width: 22rem) {
-  .header {
-    font-size: 1.25rem;
-  }
+  min-height: auto !important;
 }

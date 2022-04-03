@@ -6,12 +6,18 @@
 
 .projectPreviewsContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   margin-top: calc(var(--container-padding) * 2);
   gap: calc(var(--container-padding) * 2) var(--container-padding);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 36rem) {
+  .projectPreviewsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 64rem) {
   .projectPreviewsContainer {
     grid-template-columns: 1fr;
   }

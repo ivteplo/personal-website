@@ -1,7 +1,7 @@
 // Copyright (c) 2022 Ivan Teplov
 
 import Head from 'next/head'
-import Header from '../components/Header'
+import Header from '../components/layout/Header'
 
 export default function Blog() {
   return (

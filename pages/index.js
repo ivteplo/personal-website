@@ -1,10 +1,10 @@
 // Copyright (c) 2022 Ivan Teplov
 
-import Header from '../components/Header'
-import PageSection from '../components/PageSection'
-import ProjectPreview from '../components/ProjectPreview'
+import Header from '../components/layout/Header'
+import PageSection from '../components/layout/PageSection'
+import ProjectPreview from '../components/projects/ProjectPreview'
 
-import styles from '../styles/Home.module.css'
+import styles from '../styles/pages/Home.module.css'
 
 export default function Home() {
   return (
@@ -30,11 +30,13 @@ export default function Home() {
         </PageSection>
         <PageSection title="Projects">
           <div className={styles.projectPreviewsContainer}>
-            <ProjectPreview />
-            <ProjectPreview />
-            <ProjectPreview />
-            <ProjectPreview />
-            <ProjectPreview />
+            <ProjectPreview
+              project={{
+                title: 'Wallet for Loyalty Cards',
+                description: 'One place for all of your loyalty cards',
+                path: '/projects/wallet',
+              }}
+            />
           </div>
         </PageSection>
       </main>

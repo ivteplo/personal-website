@@ -2,13 +2,13 @@
 
 import { useContext, createContext } from 'react'
 import classNames from 'classnames'
-import map from '../utilities/map'
+import map from '../../utilities/map'
 import Link from 'next/link'
 
-import Overlay from './Overlay'
+import Overlay from '../base/Overlay'
 
-import styles from '../styles/Menu.module.css'
-import contactInfo from '../assets/contactInfo.json'
+import styles from '../../styles/layout/Menu.module.css'
+import contactInfo from '../../assets/contactInfo.json'
 
 export const MenuContext = createContext({
   isMenuOpen: false,

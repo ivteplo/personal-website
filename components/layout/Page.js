@@ -1,6 +1,6 @@
 // Copyright (c) 2022 Ivan Teplov
 
-import styles from '../styles/Page.module.css'
+import styles from '../../styles/layout/Page.module.css'
 import Footer from './Footer'
 import NavigationBar from './NavigationBar'
 

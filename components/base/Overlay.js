@@ -3,7 +3,7 @@
 import { useRef } from 'react'
 
 import classNames from 'classnames'
-import styles from '../styles/Overlay.module.css'
+import styles from '../../styles/base/Overlay.module.css'
 
 export default function Overlay({
   visible = true,

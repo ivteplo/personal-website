@@ -31,7 +31,7 @@
 .menuSectionTitle {
   font-family: var(--primary-font);
   font-weight: 500;
-  font-size: var(--bigger-text);
+  font-size: var(--bigger-text-size);
   color: var(--gray);
   text-transform: lowercase;
   margin-bottom: 1rem;

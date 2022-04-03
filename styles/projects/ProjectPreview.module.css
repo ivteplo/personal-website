@@ -47,7 +47,7 @@
   background: var(--gray);
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 64rem) {
   .projectPreview {
     flex-direction: row;
     justify-content: space-between;

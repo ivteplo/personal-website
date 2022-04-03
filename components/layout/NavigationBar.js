@@ -3,10 +3,10 @@
 import { useState } from 'react'
 import Link from 'next/link'
 
-import MenuIcon from '../assets/icons/menu.svg'
+import MenuIcon from '../../assets/icons/menu.svg'
 import { MenuContext, Menu } from './Menu'
 
-import styles from '../styles/NavigationBar.module.css'
+import styles from '../../styles/layout/NavigationBar.module.css'
 
 export default function NavigationBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)

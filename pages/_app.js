@@ -1,7 +1,7 @@
 // Copyright (c) 2022 Ivan Teplov
 
 import Head from 'next/head'
-import Page from '../components/Page'
+import Page from '../components/layout/Page'
 
 import '../styles/globals.css'
 

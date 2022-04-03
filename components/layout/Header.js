@@ -1,7 +1,8 @@
 // Copyright (c) 2022 Ivan Teplov
 
 import classNames from 'classnames'
-import styles from '../styles/Header.module.css'
+import styles from '../../styles/layout/Header.module.css'
+import PageSection from './PageSection'
 
 export default function Header({
   centered = false,
@@ -20,8 +21,8 @@ export default function Header({
   )
 
   return (
-    <header {...props} className={classes}>
+    <PageSection as="header" {...props} className={classes}>
       {children}
-    </header>
+    </PageSection>
   )
 }
