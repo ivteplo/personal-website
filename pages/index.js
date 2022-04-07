@@ -41,12 +41,15 @@ export default function Home() {
             quickly learn a new framework.
           </p>
           <p>
-            I'm unable to help anyone design a website, since I don't have a big
-            experience working in this field. But you can ask a design studio or
-            a freelancer to design a website for you, and I'll convert the
-            design into a fully-working website.
+            I'm unable to help anyone design a website, since I don't have that
+            much experience working in this field. But you can ask a design
+            studio or a freelancer to design a website for you, and I'll convert
+            the design into a fully-working website.
           </p>
-          <p></p>
+          <p>
+            My goal is to take experience of using websites to a higher level,
+            so that they seem to be a good choice even compared to native apps.
+          </p>
         </PageSection>
         <PageSection title="Projects" id="projects">
           <div className={styles.projectPreviewsContainer}>
