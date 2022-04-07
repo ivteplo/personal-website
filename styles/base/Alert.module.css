@@ -1,0 +1,26 @@
+/* Copyright (c) 2022 Ivan Teplov */
+
+.alert {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  max-width: 90vw;
+  max-height: 90vh;
+
+  box-sizing: border-box;
+
+  padding: 2rem;
+  border-radius: 1em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.actionButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}

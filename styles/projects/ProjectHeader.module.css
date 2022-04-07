@@ -16,7 +16,7 @@
   margin: var(--container-padding) 0;
   display: flex;
   flex-direction: column;
-  gap: calc(var(--container-padding) / 4);
+  gap: 2rem;
 }
 
 .title {

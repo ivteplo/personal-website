@@ -2,6 +2,7 @@
 
 :root {
   --container-padding: 1.5rem;
+  --navigation-bar-padding: 1.75rem var(--container-padding);
 
   --foreground: #000;
   --background: #fff;
@@ -102,23 +103,37 @@ h3 {
   font-size: var(--subtitle-size);
 }
 
-button {
+button,
+input,
+textarea {
   font: inherit;
 
+  padding: 0.75rem 2rem;
+  outline: none;
+
+  background: transparent;
+  color: inherit;
+
+  border-radius: 1em;
+}
+
+button {
   display: flex;
   justify-content: center;
   align-items: center;
 
-  padding: 0.5rem;
-  border-radius: 1em;
-
-  outline: none;
   border: none;
-
   cursor: pointer;
+}
 
-  background: transparent;
-  color: inherit;
+button.primary {
+  background: var(--inverse);
+  color: var(--on-inverse);
+  transition: var(--transition-duration);
+}
+
+button.primary:hover {
+  background: var(--gray);
 }
 
 a,
@@ -135,11 +150,30 @@ button,
 h1,
 h2,
 h3,
-:not(p) > a {
+:not(p) > a,
+label {
   font-family: var(--primary-font);
 }
 
 button,
 :not(p) > a {
   font-weight: 500;
+}
+
+input,
+textarea {
+  border: 0.125rem solid var(--gray);
+
+  background: transparent;
+  color: var(--foreground);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--gray);
+}
+
+textarea {
+  resize: vertical;
+  max-height: 100vh;
 }

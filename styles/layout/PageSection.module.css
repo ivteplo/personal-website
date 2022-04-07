@@ -14,5 +14,8 @@
   flex-direction: column;
 
   justify-content: center;
+}
+
+.pageSection > p {
   font-size: var(--bigger-text-size);
 }

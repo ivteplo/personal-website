@@ -57,6 +57,9 @@ export function Menu(props) {
       visible={isMenuOpen}
       role="menu"
       className={styles.menu}
+      wrapperProps={{
+        className: styles.overlay,
+      }}
     >
       <button
         type="button"
@@ -69,9 +72,10 @@ export function Menu(props) {
       <MenuSection title="Pages">
         <MenuLink href="/">Home</MenuLink>
         <MenuLink href="/projects">Projects</MenuLink>
+        <MenuLink href="/contact">Contact</MenuLink>
         <MenuLink href="/blog">Blog</MenuLink>
       </MenuSection>
-      <MenuSection title="Contact">
+      <MenuSection title="Social">
         {map(contactInfo, (link, website) => (
           <MenuLink key={website} href={link}>
             {website}

@@ -4,6 +4,8 @@
   min-height: 70vh !important;
   box-sizing: border-box;
 
+  gap: 0 !important;
+
   display: flex;
   flex-direction: column;
 

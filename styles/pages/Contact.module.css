@@ -1,0 +1,15 @@
+/* Copyright (c) 2022 Ivan Teplov */
+
+.form,
+.form > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.form {
+  gap: calc(var(--container-padding) / 2);
+}
+
+.form > div {
+  gap: 0.5rem;
+}

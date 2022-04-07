@@ -39,7 +39,3 @@
   visibility: hidden;
   opacity: 0;
 }
-
-.overlay[aria-hidden='true'] .innerWrapper {
-  transform: translate(100%);
-}

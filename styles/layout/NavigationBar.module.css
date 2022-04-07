@@ -1,7 +1,7 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
 .navigationBar {
-  padding: 1.75rem var(--container-padding);
+  padding: var(--navigation-bar-padding);
 
   background-color: var(--vibrant-bg);
   backdrop-filter: var(--vibrancy);
