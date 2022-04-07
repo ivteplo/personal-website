@@ -8,7 +8,7 @@ import Link from 'next/link'
 import Overlay from '../base/Overlay'
 
 import styles from '../../styles/layout/Menu.module.css'
-import contactInfo from '../../assets/contactInfo.json'
+import contactInfo from '../../assets/contactInfo.js'
 
 export const MenuContext = createContext({
   isMenuOpen: false,
@@ -76,7 +76,7 @@ export function Menu(props) {
         <MenuLink href="/blog">Blog</MenuLink>
       </MenuSection>
       <MenuSection title="Social">
-        {map(contactInfo, (link, website) => (
+        {map(contactInfo, ({ link }, website) => (
           <MenuLink key={website} href={link}>
             {website}
           </MenuLink>

@@ -1,10 +1,9 @@
 /* Copyright (c) 2022 Ivan Teplov */
 
 .pageSection {
-  padding: var(--container-padding);
+  padding: calc(var(--container-padding) * 2) var(--container-padding);
   gap: calc(var(--container-padding) / 2);
 
-  min-height: 40rem;
   max-width: 90rem;
 
   margin: 0 auto;

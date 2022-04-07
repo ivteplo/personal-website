@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Alert from '../components/base/Alert'
 import Spinner from '../components/base/Spinner'
@@ -9,7 +10,10 @@ import Header from '../components/layout/Header'
 import PageSection from '../components/layout/PageSection'
 
 import styles from '../styles/pages/Contact.module.css'
+import contactInfo from '../assets/contactInfo.js'
+
 import formToJSON from '../utilities/formToJSON'
+import map from '../utilities/map'
 
 export default function Contact() {
   const [response, setResponse] = useState(null)
@@ -76,6 +80,18 @@ export default function Contact() {
       <Header mini>
         <h1>Contact</h1>
       </Header>
+      <PageSection title="Social media">
+        <div className={styles.socialButtons}>
+          {map(contactInfo, ({ link, icon: Icon }, media) => (
+            <Link href={link}>
+              <a className={styles.socialButton}>
+                <Icon />
+                <span>{media}</span>
+              </a>
+            </Link>
+          ))}
+        </div>
+      </PageSection>
       <PageSection title="Mail">
         <form
           className={styles.form}
@@ -86,13 +102,7 @@ export default function Contact() {
           <Alert
             visible={isAlertShown}
             onHide={hideAlert}
-            title={
-              response?.success
-                ? 'Success'
-                : response
-                ? 'Error'
-                : ''
-            }
+            title={response?.success ? 'Success' : response ? 'Error' : ''}
             actions={
               response && (
                 <>

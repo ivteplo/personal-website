@@ -13,3 +13,30 @@
 .form > div {
   gap: 0.5rem;
 }
+
+.socialButtons {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(7rem, 1fr));
+  gap: 1rem;
+}
+
+.socialButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+
+  text-align: center;
+  aspect-ratio: 1;
+
+  padding: 0.5rem;
+  border: 0.125rem solid var(--gray);
+  border-radius: 1rem;
+}
+
+.socialButton > svg {
+  aspect-ratio: 1;
+  object-fit: contain;
+  width: 2rem;
+}
