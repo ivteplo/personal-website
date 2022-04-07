@@ -27,7 +27,7 @@ export function MenuLink({ onClick, href, className, ...props }) {
     }
   }
 
-  const classes = classNames(styles.menuLink, className)
+  const classes = classNames('underlined', styles.menuLink, className)
 
   return (
     <Link href={href}>

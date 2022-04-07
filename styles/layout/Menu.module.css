@@ -52,36 +52,4 @@
 
 .menuLink {
   font-size: var(--subtitle-size);
-  position: relative;
-}
-
-.menuLink::after {
-  content: '';
-
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  right: 0;
-  top: calc(100% + 0.05em);
-  bottom: -0.1em;
-  background-color: currentColor;
-
-  transition: var(--transition-duration);
-}
-
-.menuLink:hover,
-.menuLink:focus,
-.menuLink:active {
-  color: var(--background);
-}
-
-.menuLink:hover::after,
-.menuLink:focus::after,
-.menuLink:active::after {
-  left: -0.25em;
-  right: -0.25em;
-  top: 0;
-
-  border-radius: 0.25em;
-  color: var(--foreground);
 }

@@ -1,0 +1,6 @@
+/* Copyright (c) 2022 Ivan Teplov */
+
+.list {
+  list-style-position: inside;
+  font-size: var(--bigger-text-size);
+}

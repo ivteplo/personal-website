@@ -80,7 +80,7 @@ export default function Contact() {
       <Header mini>
         <h1>Contact</h1>
       </Header>
-      <PageSection title="Social media">
+      <PageSection title="Social Media">
         <div className={styles.socialButtons}>
           {map(contactInfo, ({ link, icon: Icon }, media) => (
             <Link href={link}>

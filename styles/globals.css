@@ -91,6 +91,41 @@ a:active {
   color: var(--gray);
 }
 
+a.underlined {
+  position: relative;
+}
+
+a.underlined::after {
+  content: '';
+
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 0;
+  top: calc(100% + 0.05em);
+  bottom: -0.1em;
+  background-color: currentColor;
+
+  transition: var(--transition-duration);
+}
+
+a.underlined:hover,
+a.underlined:focus,
+a.underlined:active {
+  color: var(--background);
+}
+
+a.underlined:hover::after,
+a.underlined:focus::after,
+a.underlined:active::after {
+  left: -0.25em;
+  right: -0.25em;
+  top: 0;
+
+  border-radius: 0.25em;
+  color: var(--foreground);
+}
+
 h1 {
   font-size: var(--large-title-size);
 }
