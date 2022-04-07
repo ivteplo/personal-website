@@ -71,7 +71,7 @@ export function Menu(props) {
       </button>
       <MenuSection title="Pages">
         <MenuLink href="/">Home</MenuLink>
-        <MenuLink href="/projects">Projects</MenuLink>
+        <MenuLink href="/#projects">Projects</MenuLink>
         <MenuLink href="/contact">Contact</MenuLink>
         <MenuLink href="/blog">Blog</MenuLink>
       </MenuSection>
