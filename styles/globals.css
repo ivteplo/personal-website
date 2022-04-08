@@ -126,6 +126,10 @@ a.underlined:active::after {
   color: var(--foreground);
 }
 
+ul {
+  list-style-position: inside;
+}
+
 h1 {
   font-size: var(--large-title-size);
 }
@@ -178,7 +182,8 @@ h3,
 button,
 p,
 span,
-li {
+li,
+summary {
   user-select: none;
 }
 

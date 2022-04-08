@@ -10,7 +10,8 @@
     "CSS",
     "Service Worker API",
     "IndexedDB",
-    "Rollup"
+    "Rollup",
+    "Octicons"
   ],
   "repository": "https://github.com/ivteplo/loyalty-cards-wallet"
 }

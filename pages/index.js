@@ -1,7 +1,10 @@
 // Copyright (c) 2022 Ivan Teplov
 
+import Link from 'next/link'
+
 import projects from '../assets/projects'
 import map from '../utilities/map'
+import getSkills from '../utilities/getSkills'
 
 import Header from '../components/layout/Header'
 import PageSection from '../components/layout/PageSection'
@@ -10,6 +13,8 @@ import ProjectPreview from '../components/projects/ProjectPreview'
 import styles from '../styles/pages/Home.module.css'
 
 export default function Home() {
+  const skills = getSkills()
+
   return (
     <>
       <Header centered>
@@ -65,6 +70,27 @@ export default function Home() {
                 }}
                 key={path}
               />
+            ))}
+          </div>
+        </PageSection>
+        <PageSection title="Skills">
+          <div className={styles.skills}>
+            {map(skills, (skill, key) => (
+              <details key={key} className={styles.skillGroup}>
+                <summary>
+                  {skill.displayName} - {skill.projects.length} project
+                  {skill.projects.length !== 1 ? 's' : ''}
+                </summary>
+                <ul>
+                  {map(skill.projects, ({ projectName, repository }) => (
+                    <li>
+                      <Link href={repository}>
+                        <a>{projectName}</a>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </details>
             ))}
           </div>
         </PageSection>

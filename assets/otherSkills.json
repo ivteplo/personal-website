@@ -1,0 +1,66 @@
+{
+  "QR Code Generator": {
+    "repository": "https://github.com/ivteplo/qrcode-generator",
+    "technologies": ["JavaScript", "React"]
+  },
+  "Word Guessing Game": {
+    "repository": "https://github.com/ivteplo/word-guessing-game",
+    "technologies": [
+      "TypeScript",
+      "TailwindCSS",
+      "HeadlessUI",
+      "React",
+      "Octicons",
+      "Vite",
+      "HTML",
+      "CSS"
+    ]
+  },
+  "Paint App": {
+    "repository": "https://github.com/ivteplo/react-paint",
+    "technologies": ["TypeScript", "React", "Canvas API", "Vite", "HTML", "CSS"]
+  },
+  "Pomodo": {
+    "repository": "https://github.com/ivteplo/pomodo",
+    "technologies": [
+      "Vue",
+      "JavaScript",
+      "SVG",
+      "HTML",
+      "CSS",
+      "IndexedDB",
+      "Vite"
+    ]
+  },
+  "Todo List": {
+    "repository": "https://github.com/ivteplo/react-todo-list",
+    "technologies": ["TypeScript", "Firebase", "React", "CSS", "HTML"]
+  },
+  "Sierpinski Triangle": {
+    "repository": "https://github.com/ivteplo/sierpinski-triangle",
+    "technologies": ["JavaScript", "Canvas API", "HTML"]
+  },
+  "Snake Game (Python)": {
+    "repository": "https://github.com/ivteplo/snake-pygame",
+    "technologies": ["Python", "PyGame"]
+  },
+  "p5.js Clone": {
+    "repository": "https://github.com/ivteplo/p5.js-clone",
+    "technologies": ["TypeScript", "ESBuild"]
+  },
+  "Sleep Patterns": {
+    "repository": "https://github.com/ivteplo/sleep-patterns",
+    "technologies": [
+      "Python 3",
+      "Jupyter Notebook",
+      "Scikit Learn",
+      "Numpy",
+      "Matplotlib",
+      "Pandas"
+    ]
+  },
+  "Ruby HTTP Server": {
+    "repository": "https://github.com/ivteplo/simple-ruby-http-server",
+    "technologies": ["Ruby", "Sockets"]
+  }
+}

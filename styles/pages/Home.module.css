@@ -22,3 +22,39 @@
     grid-template-columns: 1fr;
   }
 }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.skillGroup {
+  padding: 1rem 1.5rem;
+  border: 0.125rem solid var(--gray);
+}
+
+.skillGroup:first-child {
+  border-radius: 1rem;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.skillGroup:not(:last-child) {
+  border-bottom: 0;
+}
+
+.skillGroup:last-child {
+  border-radius: 1rem;
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.skillGroup summary {
+  font-size: var(--bigger-text-size);
+  font-weight: 500;
+}
+
+.skillGroup ul {
+  margin-top: 1rem;
+  line-height: 2.5;
+}
