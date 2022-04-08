@@ -1,0 +1,16 @@
+{
+  "name": "Wallet",
+  "fullName": "Wallet for Loyalty Cards",
+  "description": "One place for all of your loyalty cards",
+  "path": "/projects/wallet",
+  "technologies": [
+    "Svelte",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Service Worker API",
+    "IndexedDB",
+    "Rollup"
+  ],
+  "repository": "https://github.com/ivteplo/loyalty-cards-wallet"
+}

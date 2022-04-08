@@ -1,5 +1,8 @@
 // Copyright (c) 2022 Ivan Teplov
 
+import projects from '../assets/projects'
+import map from '../utilities/map'
+
 import Header from '../components/layout/Header'
 import PageSection from '../components/layout/PageSection'
 import ProjectPreview from '../components/projects/ProjectPreview'
@@ -53,13 +56,16 @@ export default function Home() {
         </PageSection>
         <PageSection title="Projects" id="projects">
           <div className={styles.projectPreviewsContainer}>
-            <ProjectPreview
-              project={{
-                title: 'Wallet for Loyalty Cards',
-                description: 'One place for all of your loyalty cards',
-                path: '/projects/wallet',
-              }}
-            />
+            {map(projects, ({ fullName, description, path }) => (
+              <ProjectPreview
+                project={{
+                  title: fullName,
+                  description,
+                  path,
+                }}
+                key={path}
+              />
+            ))}
           </div>
         </PageSection>
       </main>

@@ -1,0 +1,16 @@
+{
+  "name": "Personal Website",
+  "fullName": "Personal Website",
+  "description": "Website to tell others more about myself",
+  "path": "/projects/personal-website",
+  "technologies": [
+    "Next.js",
+    "React",
+    "MongoDB",
+    "JavaScript",
+    "HTML",
+    "CSS",
+    "Figma"
+  ],
+  "repository": "https://github.com/ivteplo/personal-website"
+}

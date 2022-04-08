@@ -1,25 +1,19 @@
 // Copyright (c) 2022 Ivan Teplov
 
-import Head from 'next/head'
+import project from '../../assets/projects/wallet.json'
+
+import ProjectPage from '../../components/projects/ProjectPage'
 
 import WideImage from '../../components/base/WideImage'
 import PageSection from '../../components/layout/PageSection'
-import ProjectHeader from '../../components/projects/ProjectHeader'
 import ProjectImageGallery from '../../components/projects/ProjectImageGallery'
-import ProjectRepository from '../../components/projects/ProjectRepository'
-import ProjectTechnologies from '../../components/projects/ProjectTechnologies'
 
 export default function WalletProject() {
   return (
-    <>
-      <Head>
-        <title>Wallet for Loyalty Cards | Projects | Ivan Teplov</title>
-      </Head>
-      <ProjectHeader
-        projectName="Wallet"
-        title="Lightweight web application for storing loyalty cards"
-        path="/projects/wallet"
-      ></ProjectHeader>
+    <ProjectPage
+      project={project}
+      title="Lightweight web application for storing loyalty cards"
+    >
       <PageSection title="The Challenge">
         <p>
           I came up with the idea of creating the Wallet app when I've found out
@@ -55,22 +49,6 @@ export default function WalletProject() {
           }}
         />
       </PageSection>
-      <PageSection title="Used Technologies">
-        <ProjectTechnologies
-          technologies={[
-            'Svelte',
-            'JavaScript',
-            'HTML, CSS',
-            'Service Worker API',
-            'IndexedDB',
-            'Rollup',
-          ]}
-        />
-      </PageSection>
-      <PageSection>
-        <ProjectRepository link="https://github.com/ivteplo/loyalty-cards-wallet" />
-      </PageSection>
-      {/* TODO */}
-    </>
+    </ProjectPage>
   )
 }
