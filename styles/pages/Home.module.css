@@ -29,7 +29,6 @@
 }
 
 .skillGroup {
-  padding: 1rem 1.5rem;
   border: 0.125rem solid var(--gray);
 }
 
@@ -50,11 +49,16 @@
 }
 
 .skillGroup summary {
+  padding: 1rem 1.5rem;
   font-size: var(--bigger-text-size);
   font-weight: 500;
 }
 
+.skillGroup[open] summary {
+  border-bottom: 0.0625rem solid var(--gray);
+}
+
 .skillGroup ul {
-  margin-top: 1rem;
   line-height: 2.5;
+  padding: 1rem 1.5rem;
 }

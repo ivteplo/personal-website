@@ -29,7 +29,8 @@
       "HTML",
       "CSS",
       "IndexedDB",
-      "Vite"
+      "Vite",
+      "Service Worker API"
     ]
   },
   "Todo List": {
