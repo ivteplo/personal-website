@@ -16,7 +16,9 @@ export default function ProjectRepository({
   return (
     <h2 className={classes}>
       <Link href={link}>
-        <a className="underlined">Project Repository</a>
+        <a className="underlined" target="_blank">
+          Project Repository
+        </a>
       </Link>
     </h2>
   )

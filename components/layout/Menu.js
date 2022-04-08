@@ -77,7 +77,7 @@ export function Menu(props) {
       </MenuSection>
       <MenuSection title="Social">
         {map(contactInfo, ({ link }, website) => (
-          <MenuLink key={website} href={link}>
+          <MenuLink key={website} href={link} target="_blank">
             {website}
           </MenuLink>
         ))}

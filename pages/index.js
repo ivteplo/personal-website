@@ -3,6 +3,7 @@
 import Link from 'next/link'
 
 import projects from '../assets/projects'
+import contacts from '../assets/contactInfo'
 import map from '../utilities/map'
 import getSkills from '../utilities/getSkills'
 
@@ -74,6 +75,15 @@ export default function Home() {
           </div>
         </PageSection>
         <PageSection title="Skills">
+          <p>
+            Please, take a note that not all of my projects are there. You can
+            find more of my projects on my{' '}
+            <Link href={contacts.GitHub.link}>
+              <a className="underlined" target="_blank">
+                GitHub profile
+              </a>
+            </Link>
+          </p>
           <div className={styles.skills}>
             {map(skills, (skill, key) => (
               <details key={key} className={styles.skillGroup}>

@@ -52,6 +52,7 @@
   padding: 1rem 1.5rem;
   font-size: var(--bigger-text-size);
   font-weight: 500;
+  cursor: pointer;
 }
 
 .skillGroup[open] summary {
