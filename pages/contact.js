@@ -119,7 +119,7 @@ export default function Contact() {
               </p>
             ) : response ? (
               <p className={styles.errorMessage}>
-                {response?.data.message || 'Something went wrong'}
+                {response?.data?.message ?? 'Something went wrong'}
               </p>
             ) : (
               <Spinner />
