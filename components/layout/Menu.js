@@ -73,7 +73,7 @@ export function Menu(props) {
         <MenuLink href="/">Home</MenuLink>
         <MenuLink href="/#projects">Projects</MenuLink>
         <MenuLink href="/contact">Contact</MenuLink>
-        <MenuLink href="/blog">Blog</MenuLink>
+        {/* <MenuLink href="/blog">Blog</MenuLink> */}
       </MenuSection>
       <MenuSection title="Social">
         {map(contactInfo, ({ link }, website) => (
