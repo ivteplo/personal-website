@@ -63,7 +63,15 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+    --foreground: #fff;
+    --background: #000;
+
+    --vibrant-bg: #0008;
+
+    --gray: #555;
+
+    --inverse: #222;
+    --on-inverse: #fff;
   }
 }
 
