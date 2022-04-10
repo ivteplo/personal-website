@@ -94,7 +94,7 @@ export default function Home() {
                 </summary>
                 <ul>
                   {map(skill.projects, ({ projectName, repository }) => (
-                    <li>
+                    <li key={projectName}>
                       <Link href={repository}>
                         <a>{projectName}</a>
                       </Link>
