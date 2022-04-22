@@ -27,6 +27,7 @@
   text-transform: lowercase;
   gap: 0.5em;
   transition: color var(--transition-duration);
+  padding-right: 0;
 }
 
 .openMenuButton:hover,
