@@ -2,8 +2,9 @@
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(6rem, 1fr));
-  gap: calc(var(--container-padding) / 2);
+  grid-template-columns: repeat(auto-fit, minmax(8rem, 40rem));
+  row-gap: calc(var(--container-padding) * 2);
+  column-gap: calc(var(--container-padding) / 2);
 }
 
 .galleryItem {
@@ -17,7 +18,6 @@
 
 .imageWrapper {
   position: relative;
-  z-index: -1;
   aspect-ratio: 1;
 }
 

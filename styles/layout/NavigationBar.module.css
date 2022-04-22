@@ -14,11 +14,13 @@
   top: 0;
   left: 0;
   right: 0;
+
+  z-index: 10;
 }
 
 .logo {
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: var(--bigger-text-size);
 }
 
 .openMenuButton {

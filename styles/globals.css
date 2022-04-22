@@ -2,7 +2,8 @@
 
 :root {
   --container-padding: 1.5rem;
-  --navigation-bar-padding: 1.75rem var(--container-padding);
+  --navigation-bar-padding: calc(var(--container-padding) / 8 * 7)
+    var(--container-padding);
 
   --foreground: #000;
   --background: #fff;
@@ -17,10 +18,10 @@
 
   --transition-duration: 0.3s;
 
-  --large-title-size: 3rem;
-  --title-size: 2.25rem;
-  --subtitle-size: 1.5rem;
-  --bigger-text-size: 1.25rem;
+  --large-title-size: 2rem;
+  --title-size: 1.5rem;
+  --subtitle-size: 1.25rem;
+  --bigger-text-size: 1rem;
 
   --system-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
@@ -38,9 +39,14 @@
 }
 
 /* Phone but not the smallest */
-@media (min-width: 26rem) {
+@media (min-width: 30rem) {
   :root {
     --container-padding: 2rem;
+
+    --large-title-size: 3rem;
+    --title-size: 2.25rem;
+    --subtitle-size: 1.5rem;
+    --bigger-text-size: 1.25rem;
   }
 }
 

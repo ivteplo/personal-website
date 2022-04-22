@@ -9,7 +9,7 @@ export default function ProjectImageGallery({ images, className, ...props }) {
   return (
     <div className={styles.gallery}>
       {map(images, (imagePath, description) => (
-        <div className={styles.galleryItem}>
+        <div key={imagePath} className={styles.galleryItem}>
           <div className={styles.imageWrapper}>
             <Image
               objectFit="cover"
