@@ -83,7 +83,7 @@ export default function Contact() {
       <PageSection title="Social Media">
         <div className={styles.socialButtons}>
           {map(contactInfo, ({ link, icon: Icon }, media) => (
-            <Link href={link}>
+            <Link href={link} key={link}>
               <a className={styles.socialButton}>
                 <Icon />
                 <span>{media}</span>
