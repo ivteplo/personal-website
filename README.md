@@ -42,9 +42,11 @@ touch .env
 MONGODB_URI=mongodb+srv://user:password@host/database # replace `user`, `password`, `host`, and `database` with your own values
 ```
 
-6. Start the development server
+6. Start the development server for a website
 
 ```bash
+cd apps/website
+
 npm run dev
 # or:
 yarn dev
