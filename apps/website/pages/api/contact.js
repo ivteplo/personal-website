@@ -1,20 +1,19 @@
 // Copyright (c) 2022 Ivan Teplov
 
-import connectToDatabase from '../../library/database'
-import Mail from '../../models/Mail'
+import { connectToDatabase, models } from 'database'
 
 import apiHandler from '../../utilities/apiHandler'
 import { MethodNotAllowed } from '../../utilities/apiErrors'
 
 export default apiHandler(async (request, response) => {
-  await connectToDatabase()
+  await connectToDatabase(process.env.MONGODB_URI)
 
   if (request.method !== 'POST') {
     throw new MethodNotAllowed('Only POST method is allowed.')
   }
 
   // Create a new model in the database
-  const message = await Mail.create(request.body)
+  const message = await models.Mail.create(request.body)
 
   response.status(201).json({
     success: true,

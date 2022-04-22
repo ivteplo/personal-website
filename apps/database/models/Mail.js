@@ -52,4 +52,5 @@ const MailSchema = new mongoose.Schema(
   }
 )
 
-export default mongoose.models.Mail || mongoose.model('Mail', MailSchema)
+export const Mail = mongoose.models.Mail || mongoose.model('Mail', MailSchema)
+export default Mail
