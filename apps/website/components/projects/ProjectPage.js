@@ -21,6 +21,7 @@ export default function ProjectPage({
   title = '',
   children,
 }) {
+  // TODO: find a way to 'dynamically' get the domain name
   return (
     <>
       <Head>
@@ -31,7 +32,12 @@ export default function ProjectPage({
         />
         <meta name="og:description" content={project.description} />
         <meta name="og:type" content="article" />
-        <meta name="og:image" content={previewImagePath(project.path)} />
+        <meta
+          name="og:image"
+          content={
+            'https://ivanteplov.vercel.app' + previewImagePath(project.path)
+          }
+        />
         <meta name="og:url" content="https://ivanteplov.vercel.app" />
       </Head>
       <ProjectHeader
