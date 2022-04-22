@@ -3,7 +3,9 @@
 import wallet from './wallet.json'
 import personalWebsite from './personal-website.json'
 
-export default {
+const projects = {
   wallet,
   personalWebsite,
 }
+
+export default projects
