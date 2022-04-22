@@ -35,7 +35,8 @@ export default function ProjectPage({
         <meta
           name="og:image"
           content={
-            'https://ivanteplov.vercel.app' + previewImagePath(project.path)
+            'https://ivanteplov.vercel.app' +
+            previewImagePath(project.path).replace(/.svg$/, '.png')
           }
         />
         <meta name="og:url" content="https://ivanteplov.vercel.app" />
