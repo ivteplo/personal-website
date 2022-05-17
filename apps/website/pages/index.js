@@ -28,7 +28,7 @@ export default function Home() {
         <PageSection title="Introduction">
           <p>
             Hello! I'm Ivan Teplov, a full-stack web developer. I help
-            individuals, teams, and companies make websites that work well both
+            individuals, teams, and companies make websites that work well
             on computers, tablets, and phones.
           </p>
           <p>
