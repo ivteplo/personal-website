@@ -5,7 +5,7 @@ import styles from '../../styles/projects/ProjectTechnologies.module.css'
 
 export default function ProjectTechnologies({
   technologies,
-  className,
+  className = '',
   ...props
 }) {
   const classes = classNames(styles.list, className)

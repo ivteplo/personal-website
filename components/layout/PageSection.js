@@ -5,9 +5,9 @@ import styles from '../../styles/layout/PageSection.module.css'
 
 export default function PageSection({
   as: Tag = 'section',
-  title,
+  title = '',
   children,
-  className,
+  className = '',
   ...props
 }) {
   const classes = classNames(styles.pageSection, className)

@@ -1,6 +1,7 @@
 // Copyright (c) 2022 Ivan Teplov
 
 import Link from 'next/link'
+import Head from 'next/head'
 
 import projects from '../assets/projects'
 import contacts from '../assets/contactInfo'
@@ -18,6 +19,19 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <meta
+          name="og:title"
+          content={`Ivan Teplov`}
+        />
+        <meta name="og:description" content="Ivan Teplov's personal website and blog" />
+        <meta name="og:type" content="website" />
+        <meta
+          name="og:image"
+          content='https://ivanteplov.vercel.app/projects/personal-website/preview.png'
+        />
+        <meta name="og:url" content="https://ivanteplov.vercel.app" />
+      </Head>
       <Header centered>
         <h1>Ivan Teplov</h1>
         <p className={styles.headerSubtitle}>

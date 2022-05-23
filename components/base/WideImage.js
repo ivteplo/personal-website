@@ -6,7 +6,7 @@ import Image from 'next/image'
 import styles from '../../styles/base/WideImage.module.css'
 
 export default function WideImage({
-  className,
+  className = '',
   src,
   alt,
   wrapperProps = {},

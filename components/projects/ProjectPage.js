@@ -28,8 +28,9 @@ export default function ProjectPage({
         <title>{project.fullName} | Projects | Ivan Teplov</title>
         <meta
           name="og:title"
-          content={`${project.fullName} | Projects | Ivan Teplov`}
+          content={`${project.fullName} | Projects`}
         />
+        <meta name="og:site_name" content="Ivan Teplov" />
         <meta name="og:description" content={project.description} />
         <meta name="og:type" content="article" />
         <meta
@@ -39,13 +40,13 @@ export default function ProjectPage({
             previewImagePath(project.path).replace(/.svg$/, '.png')
           }
         />
-        <meta name="og:url" content="https://ivanteplov.vercel.app" />
+        <meta name="og:url" content={`https://ivanteplov.vercel.app/projects/${project.name}`} />
       </Head>
       <ProjectHeader
         projectName={project.name}
         title={title}
         path={project.path}
-      ></ProjectHeader>
+      />
       {children}
       <PageSection title="Used Technologies">
         <ProjectTechnologies technologies={project.technologies} />

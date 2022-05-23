@@ -11,7 +11,7 @@ export default function ProjectHeader({
   projectName,
   title = null,
   path,
-  children,
+  children = null,
 }) {
   return (
     <Header>

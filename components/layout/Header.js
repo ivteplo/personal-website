@@ -7,8 +7,8 @@ import PageSection from './PageSection'
 export default function Header({
   centered = false,
   mini = false,
-  children,
-  className,
+  children = null,
+  className = '',
   ...props
 }) {
   const classes = classNames(

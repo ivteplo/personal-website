@@ -7,9 +7,7 @@ import styles from '../../styles/projects/ProjectRepository.module.css'
 
 export default function ProjectRepository({
   link,
-  children,
-  className,
-  ...props
+  className = ''
 }) {
   const classes = classNames(styles.title, className)
 
