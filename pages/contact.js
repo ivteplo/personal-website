@@ -102,6 +102,7 @@ export default function Contact() {
           <Alert
             visible={isAlertShown}
             onHide={hideAlert}
+            closeOnBackgroundClick={!!response}
             title={response?.success ? 'Success' : response ? 'Error' : ''}
             actions={
               response && (

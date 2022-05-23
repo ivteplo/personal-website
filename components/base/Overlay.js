@@ -11,6 +11,7 @@ export default function Overlay({
   className,
   children,
   onHide,
+  closeOnBackgroundClick = true,
   ...props
 }) {
   const wrapperClasses = classNames(styles.overlay, wrapperProps?.className)
@@ -21,7 +22,7 @@ export default function Overlay({
     if (contentsRef.current && onHide instanceof Function) {
       const element = contentsRef.current
 
-      if (!element.contains(event.target)) {
+      if (!element.contains(event.target) && closeOnBackgroundClick) {
         onHide()
       }
     }
